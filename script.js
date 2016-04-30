@@ -1,3 +1,5 @@
+//todo: simulate hold shift
+
 var gameObj = {
   keyIn: document.getElementById('keyboardInput'),
   feedback: document.getElementById('feedback'),
@@ -40,12 +42,14 @@ gameObj.keyIn.addEventListener('keyup',function(e){
     this.setRandomKey();
     this.streak++;
     this.renderStreak();
+    this.keyIn.placeholder = 'nice job!'
   }
   else {
     this.mistypes[correctKey] ? this.mistypes[correctKey]++ : this.mistypes[correctKey] = 1;
     this.selections.push(correctKey); //weighting!
     this.renderErrors();
     this.streak = 0;
+    this.keyIn.placeholder = 'try again!'
     this.renderStreak();
   }
   this.keyIn.value = '';

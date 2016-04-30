@@ -11,6 +11,10 @@ body {
   font-size: 80pt;
 }
 
+#keyboardInput{
+  text-align: left;
+}
+
 #feedback{
   text-align: left;
 }
