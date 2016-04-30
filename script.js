@@ -5,7 +5,6 @@ var gameObj = {
   streakDOM: document.getElementById('streak'),
   letter: '',
   selections: ['!','@','#','$','%','^','&','*','(',')','_'],
-  // selections: ['&'],
   getRandomSelection: function(){
     return this.selections[Math.floor(Math.random()*this.selections.length)];
   },
