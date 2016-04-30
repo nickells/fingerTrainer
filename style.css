@@ -1,0 +1,16 @@
+body, input {
+  font-size: 20pt;
+  text-align: center;
+}
+
+body {
+  font-family: 'Helvetica';
+}
+
+#typeThis{
+  font-size: 80pt;
+}
+
+#feedback{
+  text-align: left;
+}
