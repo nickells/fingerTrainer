@@ -1,6 +1,3 @@
-//todo
-//streak
-
 var gameObj = {
   keyIn: document.getElementById('keyboardInput'),
   feedback: document.getElementById('feedback'),
